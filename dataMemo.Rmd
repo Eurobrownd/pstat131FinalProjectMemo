@@ -1,0 +1,38 @@
+---
+title: "Data Memo"
+author: "Simon Lee"
+date: "2022-10-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview of the Dataset
+
+Using https://spotipy.readthedocs.io/en/master/#api-reference
+From looking at a library called spotipy created for python it seems like there
+would be alot of different types of parameters to look at. And I would probably take
+a sample of data instead of using everything
+
+Though I'm not sure what response variable that I'm trying to predict yet, some of the
+interesting predictor variables that I see myself using are artist_top_tracks(artist_id, country='US')
+category(category_id, country=None, locale=None) 
+artist_albums(artist_id, album_type=None, country=None, limit=20, offset=0)
+artist_related_artists(artist_id)
+
+
+These variables are both categorical and quantitative
+
+An example of an interesting variable to predict is the popularity of a song by country
+. Using the artist_top_tracks and category of their music as long with artist information,
+to predict the popularity of a song based on what country it is. A regression approach is best used
+for mostly quantitative data with a few categorical which could be clustered. The goal of the model
+is to be predictive in using an mechanized approach to predict the popularity of a song in a country
+based on previously known information of the artist
+
+I'm planning on loading my data asap, hopefully within the next two weeks. And if I have trouble with that
+I would most defintiedly swing by office hours as currently, the github repository containing the access to
+the spotify api is for python. But I would like to do the project in R if possible. And see where it goes from there as I
+learn how to make models in R throughout the class.
