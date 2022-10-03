@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Overview of the Dataset
 
 Using https://spotipy.readthedocs.io/en/master/#api-reference
+https://github.com/plamere/spotipy
 From looking at a library called spotipy created for python it seems like there
 would be alot of different types of parameters to look at. And I would probably take
 a sample of data instead of using everything
